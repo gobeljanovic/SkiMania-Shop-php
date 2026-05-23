@@ -87,3 +87,68 @@ To run this project locally, you need to have XAMPP installed.
 
 ```bash
 git clone https://github.com/gobeljanovic/SkiMania-Shop-php.git
+```
+
+### 2. Move the Project to the XAMPP Folder
+Move the project folder into the htdocs directory.
+
+Example path:
+```bash
+C:\xampp\htdocs\SkiMania-Shop-php
+```
+
+### 3. Start XAMPP
+Open the XAMPP Control Panel and start:
+- Apache
+- MySQL
+
+### 4. Create the Database
+Open phpMyAdmin in your browser:
+```bash
+http://localhost/phpmyadmin
+```
+Create a new database.
+
+### 5. Import the Database
+In phpMyAdmin, select the created database, click on Import, and import the SQL file located in the project folder.
+Example:
+```bash
+database/skimaniaDB.sql
+```
+
+### 6. Configure the Database Connection
+If needed, check and update the database connection settings in the PHP file used for connecting to the database.
+
+Example XAMPP local settings:
+```bash
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "skimania";
+```
+### 7. Run the Application
+Open the project in your browser:
+```bash
+http://localhost/SkiMania-Shop-php
+```
+### Demo Accounts
+The database contains test accounts that can be used to test the application features.
+- Admin Account
+```bash
+Email: admin@example.com
+Password: admin123
+```
+- User Account
+```bash
+Email: user@example.com
+Password: user123
+```
+Note: Passwords in the database are stored in hashed format.
+## Notes
+
+This project was created as a school project and is also used for portfolio purposes. The main focus of the project was not on advanced frontend design, but on implementing the core functionality of an online shop.
+
+The project demonstrates user authentication, role-based access control, session handling, product management, order management, contact messages, and communication between users and the admin.
+
+The frontend was built using HTML, CSS, Bootstrap, JavaScript, and jQuery, while the backend functionality was implemented using PHP and MySQL.
+
