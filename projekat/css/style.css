@@ -1,0 +1,332 @@
+.logoNav{
+    width: 130px;
+    margin: 5px;
+}
+
+.logDiv{
+    background-color: #49889a !important;
+    color: #03f3d7;
+    transition: .5s;
+}
+.logDiv:hover{
+    background-color: #1c4854 !important;
+    color: #03f3d7;
+}
+h4 .naslovAdminH4{
+    transition: .5s;
+}
+h4 .naslovAdminH4:hover{
+    background-color: #1c4854 !important;
+    color: #03f3d7;
+}
+ nav.navbar{
+    background-color: #217c92 ;
+} 
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 1.25em; /*20px/16px == 1.25em*/
+    transition: .5s; /*ova tranzicija se odnosi na svaku promenu bilo kog svojstva linkova iz navigacijonog bara*/
+    color: rgb(202, 224, 5);
+}
+
+.nav-link:hover{
+    color: #FFF !important;
+}
+.active{
+    color:#FFF !important;
+}
+.nav-item{
+    margin:0px 10px;
+}
+.nav-item:first-child{
+    margin-left:20px;
+}
+
+#hero-section{
+    background-color: #a1ecffa7;
+    margin: 30px 0px;
+}
+
+.skimania-naslov{
+    color: #81c408;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 4px 1px rgb(0, 0, 0);
+    transition: color 0.5s,text-shadow 0.5s;
+    display: inline-block;
+}
+
+
+.skimania-naslov:hover{
+    color: black;
+    text-shadow: none;
+}
+
+.skiIcon{
+    color:black;
+}
+
+.carousel{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img{
+    object-fit: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.carousel-item img{
+    opacity:0;
+    transition: opacity 0.5s ease-in-out !important;
+}
+
+.carousel-item.active img{
+    opacity:1;
+}
+
+#h5-anim span{
+    opacity: 0;
+    transform: translateY(10px);
+    display: inline-block;
+    animation: anim 0.5s forwards;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#h5-anim :nth-child(1){
+    animation-delay: 0.2s;
+}
+#h5-anim :nth-child(2){
+    animation-delay: 0.4s;
+}
+
+#h5-anim :nth-child(3){
+    animation-delay: 0.6s;
+}
+
+#h5-anim :nth-child(4){
+    animation-delay: 0.8s;
+}
+#h5-anim :nth-child(5){
+    animation-delay: 1s;
+}   
+
+#h5-anim :nth-child(6){
+    animation-delay: 1.2s;
+}
+
+@keyframes anim {
+    from{
+        opacity: 0%;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.card{
+    margin:15px 10px;
+    background-color: #f9f9f5;
+    transition: box-shadow,0.2s;
+} 
+.card:hover{
+    .card-body{
+        background-color: #76e876b1;
+        color:black;   
+    }
+    box-shadow: 1px 1px 15px black;
+}
+.card-body{
+    background-color: #a1ecff4c;
+    transition: background-color 0.5s;
+}
+
+
+footer{
+    background-color: #217c92 ;
+    color: #fff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s;
+}
+footer:hover{
+    background-color: #0e5b6e ;
+}
+
+footer a {
+color: #03f3d7;
+text-decoration: none;
+margin: 5px 0px;
+display: block;
+}
+
+footer h1{
+    font-weight: bold;
+}
+
+
+footer a:hover{
+    text-decoration: none;
+}
+
+footer h1, footer h4{
+    color: #03f3d7;
+    margin: 15px;
+    text-shadow: 1px 1px 4px black;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+footer h1:hover, footer h4:hover{
+    color: #000000;
+    text-shadow: none;
+}
+
+
+.footer-container{
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-left{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.footer-columns{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.footer-column{
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+
+}
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+   }
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links a {
+    background-color: #03c2ac;
+    transition: background-color 0.5s;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #03f3d7;
+}
+
+.payment-options img {
+    width: 150px; /* Prilagodjena širina za slike načina plaćanja */
+    margin-top: 10px;
+}
+
+.copyright{
+    padding: 10px;   
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.copyright a{
+    text-decoration: none;
+}
+
+.onamaDiv{
+    margin-bottom: 20px;
+}
+
+
+#kontaktSekcija, #izlaznaStranaSekcija, #onamaSekcija, #galerijaSekcija
+,#skijeSekcija, .skije-Snowboard-Sekcija, #snowboardSekcija, #faqSekcija
+,#mapasajtaSekcija,#nalogSekcija,#odeca-oprema-Sekcija,#porukeSekcija{ /*animacija za svaku sekciju na svakoj strani*/
+    animation: anim_stranica 1s forwards;
+}
+@keyframes anim_stranica {
+    from{
+        transform: translateY(10px);
+        opacity:0%;
+    }
+    to{
+        transform: translateY(0px);
+        opacity:100%;
+    }
+}
+.item img{
+    margin-bottom: 15px;
+}
+
+.row{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skije-Snowboard-Sekcija{
+    margin:20px;
+}
+.skija_detaljnije{
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+.skija_detaljnije:hover{
+   box-shadow: #000000 1px 1px 15px;
+    background-color: #b2f0ff;
+    .skiNaslov{
+        opacity: 100%;
+    }
+}
+.skiNaslov{
+    opacity: 70%;
+    transition: opacity 0.5s;
+}
+
+.accordion-collapse{
+    background-color: #0584a4;
+    color: #f9f9f5;
+    transition: background-color 0.5s;
+    
+}
+
+.accordion-collapse:hover{
+    background-color: #015266;
+}
+.accordion-button{
+    color: #4d6560;
+    font-weight: bolder;
+}
+.nalogKont{
+    background-color: #007d9ca4;
+    color: #000000;
+    transition: background-color 0.5s,color 0.5s;
+}
+.nalogKont:hover{
+    background-color: #007d9c;
+    color:#FFF;
+}
+
